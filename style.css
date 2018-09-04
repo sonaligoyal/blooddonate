@@ -1,0 +1,135 @@
+
+header
+{
+		height: 150px;
+	
+}
+.header-block
+{
+	
+	width: 1300px;
+}
+.logo
+{
+    padding-top:50px;
+	padding-left:50px;
+	width: 50%;
+	float:left;
+}
+.contactinfo
+{
+	padding-top: 50px;
+	padding-left:350px;
+	float:left;
+}
+.sitespic
+{
+	padding-top:10px;
+	padding-left:370px;
+	float:left;
+}
+
+
+.container ul
+{
+	
+	 list-style:none;
+	 
+}
+
+.container ul li
+{
+		width: 150px;
+		height:40px;
+		float:left;
+		line-height:35px;
+		text-align:center;
+		border: 1px solid gray;
+		border-bottom: 1px solid white;
+		
+}
+.container ul li:hover
+{
+	background-color:red;
+	color:white;
+}
+.container ul ul
+{
+	display:none;
+}
+
+.container ul li:hover ul 
+{
+
+	display:block;
+	color:black;
+	font-size:15px;
+	padding:0px;
+	margin:0px;
+	padding-top:4px;
+
+}
+
+.slideshow
+{
+	width:90%;
+	height:400px;
+	float:left;
+	
+	
+	
+}
+
+.slideshow img 
+{
+		
+		width:80%;
+		height:80%;
+		position:absolute;
+		top:300px;
+		left:130px;
+		z-index:-1;
+}
+
+.slideshow button
+{
+	left:30px;
+	width:30px;
+	height:30px;
+	background-color:black;
+	border:none;
+	color:white;
+	
+
+	
+}
+#btn1
+{
+	float:left;
+	position:relative;
+	top:400px;
+	left:135px;
+	
+}
+#btn2
+{
+	
+	position:relative;
+	top:400px;
+	left:1130px;
+	
+}
+
+.box
+{
+	position:relative;
+	top:600px;
+	left:40px;
+}
+
+.box p
+{
+	font-size:27px;
+	font-family:courier;
+	font-style:italic;
+}

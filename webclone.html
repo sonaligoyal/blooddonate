@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Blood Connect|Donate Blood</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<body>
+<header>
+<div class="header-block">
+<div class="logo">
+<img src="bloodcon.png"/>
+</div>
+<div class="contactinfo">
+<label><font size=5>Contact Us :</font></label>
+</div>
+<div class = "sitespic">
+<a href="#"><img src="flogo.png" width="40px"/></a>
+<a href="#"><img src="ilogo.jpg" width="40px"/></a>
+</div>
+</div>
+</header>
+<div class="container">
+<ul>
+	<li>HOME</li>
+	<li>ABOUT US
+		<ul>
+					<li>Overview</li>
+					<li>Team</li>
+					<li>Gallery</li>
+		</ul></li>
+	<li>ABOUT BLOOD
+		<ul>
+					<li>About Blood</li>
+					<li>About Planet Donation</li>
+					<li>Myths And Facts</li>
+		</ul></li>
+	<li>RAISE A REQUEST</li>
+	<li>GET INVOLVED
+		<ul>
+					<li>Join Our Team</li>
+					<li>Donate Blood</li>
+					<li>Organize Camp</li>
+		</ul></li>
+	<li>SPONSOR US</li>
+	<li>OUR BLOG</li>
+	<li>CONTACT US
+		<ul>
+					<li>To Organize A Camp</li>
+					<li>For General Query</li>
+		</ul></li>
+</ul>
+</div>
+<div class="slideshow">
+<img class="slides" src="pic1.jpg"/>
+<img class="slides" src="pic2.jpg"/>
+<img class="slides" src="pic3.png"/>
+<img class="slides" src="pic4.jpg"/>
+<button id="btn1" onClick="plusIndex(1)">&#10094; </button>
+<button id="btn2" onClick="plusIndex(-1)">&#10095; </button>
+
+	<script>
+		var index=0;
+		function plusIndex(n)
+		{
+			index=index+n;
+			showImages(index);
+		}
+		function showImages(n)
+		{
+			var i;
+			var x=document.getElementsByClassName("slides");
+			//alert(x.length);
+			if(n>=x.length)
+				{index=0;}
+			if(n<0)
+				{index=(x.length)-1;}
+			for(i=0;i<x.length;i++)
+				{
+					x[i].style.display="none";
+				}
+			x[index].style.display="block";
+			
+		}
+		autoSlide();
+		function autoSlide()
+		{
+						var i;
+			var x=document.getElementsByClassName("slides");
+			if(index>=x.length)
+				{index=0;}
+			if(index<0)
+				{index=(x.length)-1;}
+			for(i=0;i<x.length;i++)
+				{
+					x[i].style.display="none";
+				}
+			x[index].style.display="block";
+			index++;
+			setTimeout(autoSlide,3000);
+		}
+	</script>
+	
+	<div class="box">
+	<p>Started just with a blood helpline, BloodConnect now provides a 360 degree solution to the problem of blood shortage in the country!
+	</div>
+</div>
+</body>
+</html>
